@@ -3,8 +3,8 @@
 set -euo pipefail
 
 SITE="www.ntv.de"
-# SITE="www.rtl.de"
-# SITE="www.stern.de"
+#SITE="www.rtl.de"
+#SITE="www.stern.de"
 
 wget -l1 --no-check-certificate -O www/index.html ${SITE}
 
