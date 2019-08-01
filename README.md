@@ -15,17 +15,36 @@ Of course, make sure to install go-cicd first and puth it in your $PATH. You can
         The World's most basic CI/CD Tool
 ```
 
+Go grab a release [here](https://github.com/embano1/go-cicd/releases).
+
+## Usage
+
+```
+$ go-cicd -h
+
+   _____  ____     _____ _____       _____ _____
+  / ____|/ __ \   / ____|_   _|     / ____|  __ \
+ | |  __| |  | | | |      | |______| |    | |  | |
+ | | |_ | |  | | | |      | |______| |    | |  | |
+ | |__| | |__| | | |____ _| |_     | |____| |__| |
+  \_____|\____/   \_____|_____|     \_____|_____/
+
+        The World's most basic CI/CD Tool
+
+Version: 1.1
+Usage of go-cicd:
+
+  -e string
+        Pipeline executable (default "./deploy.sh")
+  -f string
+        File or directory to watch (default "main.go")
+```
+
 ## Build
 
 ### Binary (needs Go tools installed)
 
 ```
 go build -o go-cicd cmd/main.go
-# copy into your $PATH
-```
-
-### Docker Image
-
-```
-docker build -t <USER/IMAGE:TAG> .
+# copy into your $PATH if needed
 ```
